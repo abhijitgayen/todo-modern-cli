@@ -1,6 +1,6 @@
 {
   "name": "todo-modern-cli",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "cli for todo in terminal",
   "main": "./bin/index.js",
   "type": "commonjs",
@@ -9,13 +9,10 @@
   },
   "scripts": {
     "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint:fix": "standard --fix",
+    "postinstall": "npm install"
   },
-  "keywords": [
-    "todo",
-    "js",
-    "cli"
-  ],
+  "keywords": ["todo", "js", "cli"],
   "author": "Abhijit Gayen <agayen04@gmail.com>",
   "license": "ISC",
   "dependencies": {

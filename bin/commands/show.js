@@ -31,8 +31,6 @@ module.exports = (store) => {
         return;
       }
 
-      console.log(filteredTodoList, "filteredTodoList");
-
       const transformedTodoList = Object.keys(filteredTodoList).map((key) => {
         return {
           ...filteredTodoList[key],

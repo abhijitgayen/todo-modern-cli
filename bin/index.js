@@ -28,7 +28,7 @@ store.ready().then(async () => {
     .command(require("./commands/done")(store))
     .command(require("./commands/update")(store))
     .command(require("./commands/delete")(store))
-    // .demandCommand()
+    .demandCommand()
     .strict()
     .help().argv;
 });
