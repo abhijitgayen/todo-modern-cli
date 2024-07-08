@@ -17,6 +17,13 @@ const getTodosOptions = async (db, limit = 10) => {
     Object.entries(todoList).filter(([key, value]) => value !== null),
   );
 
+  if (
+    Object.keys(filteredTodoList).length === 0 &&
+    filteredTodoList.constructor === Object
+  ) {
+    return {};
+  }
+
   for (const key in filteredTodoList) {
     const todo = todoList[key];
     options.push({
@@ -41,9 +48,19 @@ module.exports = (store) => {
         valueEncoding: "json",
       });
 
+      const todosOptions = await getTodosOptions(db);
+
+      if (
+        Object.keys(todosOptions).length === 0 &&
+        todosOptions.constructor === Object
+      ) {
+        console.log("There are no todo.");
+        return;
+      }
+
       const selectTodoKey = await select({
         message: "Select one or more todo marks as a done",
-        options: await getTodosOptions(db),
+        options: todosoptions,
       });
 
       if (selectTodoKey && selectTodoKey !== "none") {
