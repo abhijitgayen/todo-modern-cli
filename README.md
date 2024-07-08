@@ -3,7 +3,7 @@ A simple and efficient Command Line Interface (CLI) Todo application built with 
 
 ## Installation
 ```
-npm install todo-cli -g
+npm install todo-modern-cli -g
 ```
 
 ## Use
