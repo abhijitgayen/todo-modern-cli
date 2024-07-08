@@ -5,13 +5,17 @@
   "main": "./bin/index.js",
   "type": "commonjs",
   "bin": {
-    "todo": "./bin/index.js"
+    "todo": "bin/index.js"
   },
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix"
   },
-  "keywords": ["todo", "js", "cli"],
+  "keywords": [
+    "todo",
+    "js",
+    "cli"
+  ],
   "author": "Abhijit Gayen <agayen04@gmail.com>",
   "license": "ISC",
   "dependencies": {
@@ -23,5 +27,13 @@
   },
   "devDependencies": {
     "standard": "^17.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhijitgayen/todo-modern-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhijitgayen/todo-modern-cli/issues"
+  },
+  "homepage": "https://github.com/abhijitgayen/todo-modern-cli#readme"
 }
