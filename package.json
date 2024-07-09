@@ -1,6 +1,6 @@
 {
   "name": "todo-modern-cli",
-  "version": "1.0.6",
+  "version": "0.0.1",
   "description": "cli for todo in terminal",
   "main": "./bin/index.js",
   "type": "commonjs",

@@ -110,7 +110,7 @@ module.exports = (store) => {
         const seletedTodo = await db.get(selectTodoKey);
         const updatedTodo = await getUpdatedTodo(seletedTodo?.value);
 
-        await db.put(new Date().getTime(), updatedTodo, { equalKey });
+        await db.put(seletedTodo?.key, updatedTodo, { equalKey });
       }
 
       await db.close();
