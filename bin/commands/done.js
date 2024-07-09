@@ -60,7 +60,7 @@ module.exports = (store) => {
 
       const selectTodoKey = await select({
         message: "Select one or more todo marks as a done",
-        options: todosoptions,
+        options: todosOptions,
       });
 
       if (selectTodoKey && selectTodoKey !== "none") {
